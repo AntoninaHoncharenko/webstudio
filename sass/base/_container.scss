@@ -4,15 +4,15 @@
   padding-left: 15px;
   padding-right: 15px;
 
-  @mixin mobile {
+  @include mobile {
     width: 480px;
   }
 
-  @mixin tablet {
+  @include tablet {
     width: 768px;
   }
 
-  @mixin desktop {
+  @include desktop {
     width: 1200px;
   }
 }
