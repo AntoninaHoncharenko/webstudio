@@ -1,0 +1,33 @@
+.works {
+  padding-top: 0;
+}
+
+.works__title {
+  margin-bottom: 50px;
+}
+
+.works__list {
+  display: flex;
+  margin-right: -30px;
+}
+
+.works__item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  position: relative;
+}
+
+.works__text {
+  @include font(700, 14px, 1.14, 0.03em);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  height: 70px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
