@@ -1,5 +1,10 @@
 .works {
   padding-top: 0;
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
 }
 
 .works__title {
