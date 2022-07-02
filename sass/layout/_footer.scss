@@ -5,11 +5,28 @@
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
+
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+  }
+
+  @include desktop {
+    text-align: left;
+  }
 }
 
 .footer__logo {
   display: block;
+  padding: 0;
   margin-bottom: 20px;
+}
+
+.tablet-container {
+  @include tablet {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }

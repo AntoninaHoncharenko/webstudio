@@ -1,6 +1,14 @@
 .join {
-  width: 206px;
-  margin-left: 70px;
+  margin-top: 60px;
+
+  @include tablet {
+    margin-top: 0;
+  }
+
+  @include desktop {
+    // width: 206px;
+    margin-left: 70px;
+  }
 }
 
 .join__title {
@@ -9,6 +17,9 @@
   text-transform: uppercase;
   color: var(--secondary-color);
   margin-bottom: 20px;
+
+  @include desktop {
+  }
 }
 
 .socials {

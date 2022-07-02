@@ -1,9 +1,13 @@
 .logo {
   font-family: 'Raleway';
-  @include font(700, 26px, 1.19, 0.03em);
+  @include font(700, 24px, 1.16, 0.03em);
   color: var(--accent-color);
   padding-top: 32px;
   padding-bottom: 32px;
+
+  @include desktop {
+    @include font(700, 26px, 1.19, 0.03em);
+  }
 
   &--dark {
     color: #000000;
