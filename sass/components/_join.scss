@@ -6,7 +6,6 @@
   }
 
   @include desktop {
-    // width: 206px;
     margin-left: 70px;
   }
 }
@@ -17,9 +16,6 @@
   text-transform: uppercase;
   color: var(--secondary-color);
   margin-bottom: 20px;
-
-  @include desktop {
-  }
 }
 
 .socials {
