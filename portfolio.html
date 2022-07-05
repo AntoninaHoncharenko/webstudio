@@ -21,7 +21,7 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container">
         <a href="./index.html" lang="en" class="header__logo logo link"
           >Web<span class="logo logo--dark">Studio</span></a
@@ -57,7 +57,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <section class="portfolio section">
@@ -84,7 +84,22 @@
             <li class="portfolio__item card">
               <a class="card__link link" href="">
                 <div class="card__thumb">
-                  <img class="card__image" src="./img/p1.jpg" alt="Вебсайт Технокряк" width="370" />
+                  <picture>
+                    <source
+                      srcset="./img/p1-desk-1x.jpg 1x, ./img/p1-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/p1-tab-1x.jpg 1x, ./img/p1-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/p1-mob-1x.jpg 1x, ./img/p1-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img class="team__image" src="./img/p1-mob-1x.jpg" alt="Веб-сайт" width="450" />
+                  </picture>
+
                   <p class="card__overley">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу і сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію або
@@ -100,7 +115,22 @@
             <li class="portfolio__item card">
               <a class="card__link link" href="">
                 <div class="card__thumb">
-                  <img class="card__image" src="./img/p2.jpg" alt="Постер" width="370" />
+                  <picture>
+                    <source
+                      srcset="./img/p2-desk-1x.jpg 1x, ./img/p2-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/p2-tab-1x.jpg 1x, ./img/p2-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/p2-mob-1x.jpg 1x, ./img/p2-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img class="team__image" src="./img/p2-mob-1x.jpg" alt="Дизайн" width="450" />
+                  </picture>
+
                   <p class="card__overley">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу і сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію або
@@ -116,7 +146,27 @@
             <li class="portfolio__item card">
               <a class="card__link link" href="">
                 <div class="card__thumb">
-                  <img class="card__image" src="./img/p3.jpg" alt="Додаток ресторану" width="370" />
+                  <picture>
+                    <source
+                      srcset="./img/p3-desk-1x.jpg 1x, ./img/p3-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/p3-tab-1x.jpg 1x, ./img/p3-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/p3-mob-1x.jpg 1x, ./img/p3-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="team__image"
+                      src="./img/p3-mob-1x.jpg"
+                      alt="Додаток ресторану"
+                      width="450"
+                    />
+                  </picture>
+
                   <p class="card__overley">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу і сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію або
@@ -132,12 +182,27 @@
             <li class="portfolio__item card">
               <a class="card__link link" href="">
                 <div class="card__thumb">
-                  <img
-                    class="card__image"
-                    src="./img/p4.jpg"
-                    alt="Марктинговий проект Prime"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./img/p4-desk-1x.jpg 1x, ./img/p4-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/p4-tab-1x.jpg 1x, ./img/p4-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/p4-mob-1x.jpg 1x, ./img/p4-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="team__image"
+                      src="./img/p4-mob-1x.jpg"
+                      alt="Марктинговий проект"
+                      width="450"
+                    />
+                  </picture>
+
                   <p class="card__overley">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу і сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію або
@@ -153,7 +218,27 @@
             <li class="portfolio__item card">
               <a class="card__link link" href="">
                 <div class="card__thumb">
-                  <img class="card__image" src="./img/p5.jpg" alt="Додаток Boxes" width="370" />
+                  <picture>
+                    <source
+                      srcset="./img/p5-desk-1x.jpg 1x, ./img/p5-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/p5-tab-1x.jpg 1x, ./img/p5-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/p5-mob-1x.jpg 1x, ./img/p5-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="team__image"
+                      src="./img/p5-mob-1x.jpg"
+                      alt="Додаток Boxes"
+                      width="450"
+                    />
+                  </picture>
+
                   <p class="card__overley">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу і сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію або
@@ -169,12 +254,22 @@
             <li class="portfolio__item card">
               <a class="card__link link" href="">
                 <div class="card__thumb">
-                  <img
-                    class="card__image"
-                    src="./img/p6.jpg"
-                    alt="Вебсайт Inspiration"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./img/p6-desk-1x.jpg 1x, ./img/p6-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/p6-tab-1x.jpg 1x, ./img/p6-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/p6-mob-1x.jpg 1x, ./img/p6-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img class="team__image" src="./img/p6-mob-1x.jpg" alt="Вебсайт" width="450" />
+                  </picture>
+
                   <p class="card__overley">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу і сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію або
@@ -190,12 +285,22 @@
             <li class="portfolio__item card">
               <a class="card__link link" href="">
                 <div class="card__thumb">
-                  <img
-                    class="card__image"
-                    src="./img/p7.jpg"
-                    alt="Дизайн Limited Edition"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./img/p7-desk-1x.jpg 1x, ./img/p7-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/p7-tab-1x.jpg 1x, ./img/p7-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/p7-mob-1x.jpg 1x, ./img/p7-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img class="team__image" src="./img/p7-mob-1x.jpg" alt="Дизайн" width="450" />
+                  </picture>
+
                   <p class="card__overley">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу і сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію або
@@ -211,12 +316,27 @@
             <li class="portfolio__item card">
               <a class="card__link link" href="">
                 <div class="card__thumb">
-                  <img
-                    class="card__image"
-                    src="./img/p8.jpg"
-                    alt="Марктинговий проект LAB"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./img/p8-desk-1x.jpg 1x, ./img/p8-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/p8-tab-1x.jpg 1x, ./img/p8-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/p8-mob-1x.jpg 1x, ./img/p8-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="team__image"
+                      src="./img/p8-mob-1x.jpg"
+                      alt="Марктинговий проект"
+                      width="450"
+                    />
+                  </picture>
+
                   <p class="card__overley">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу і сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію або
@@ -232,12 +352,22 @@
             <li class="portfolio__item card">
               <a class="card__link link" href="">
                 <div class="card__thumb">
-                  <img
-                    class="card__image"
-                    src="./img/p9.jpg"
-                    alt="Додаток Growing Business"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="./img/p9-desk-1x.jpg 1x, ./img/p9-desk-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./img/p9-tab-1x.jpg 1x, ./img/p9-tab-2x.jpg 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./img/p9-mob-1x.jpg 1x, ./img/p9-mob-2x.jpg 2x"
+                      media="(min-width: 320px)"
+                    />
+                    <img class="team__image" src="./img/p9-mob-1x.jpg" alt="Додаток" width="450" />
+                  </picture>
+
                   <p class="card__overley">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу і сервісів.
                     Все це дозволить відвідувачу отримати вичерпні відомості про компанію або
