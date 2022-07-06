@@ -20,8 +20,12 @@
 }
 
 .modal-form__input {
-  width: 370px;
+  width: 100%;
   height: 40px;
+
+  @include mobile {
+    width: 370px;
+  }
 
   @include desktop {
     width: 448px;
@@ -73,8 +77,12 @@
 
 .modal-form__textarea {
   resize: none;
-  width: 370px;
+  width: 100%;
   height: 120px;
+
+  @include mobile {
+    width: 370px;
+  }
 
   @include desktop {
     width: 448px;
@@ -108,12 +116,17 @@
 .modal-form__check-text {
   @include font(null, 12px, 1.16, 0.03em);
 
+  @include mobile {
+    @include font(null, 12px, 1.16, 0.03em);
+  }
+
   @include desktop {
     @include font(null, 14px, 1.71, 0.03em);
   }
 
   color: var(--text-color);
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   position: relative;
 
@@ -142,9 +155,25 @@
   }
 }
 
+.check-text-wrap {
+  @media screen and (max-width: 430px) {
+    margin-bottom: 5px;
+  }
+}
+
 .modal-form__link {
   text-decoration: none;
-  @include font(null, 14px, 1.71, 0.03em);
+
+  @include font(null, 12px, 1.16, 0.03em);
+
+  @media screen and (max-width: 430px) {
+    margin-left: 24px;
+  }
+
+  @include desktop {
+    @include font(null, 14px, 1.71, 0.03em);
+  }
+
   color: var(--accent-color);
   margin-left: 3px;
   position: relative;
@@ -155,8 +184,11 @@
     height: 1px;
     background-color: var(--accent-color);
     position: absolute;
-    bottom: 4px;
+    bottom: 0px;
     left: 0;
+    @include desktop {
+      bottom: 4px;
+    }
   }
 }
 
