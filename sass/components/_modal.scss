@@ -8,9 +8,15 @@
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   padding: 40px;
+
+  @include desktop {
+    width: 528px;
+    height: 581px;
+  }
+
   background-color: var(--secondary-color);
   border-radius: 4px;
   position: absolute;
