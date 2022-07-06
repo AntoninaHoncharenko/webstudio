@@ -1075,21 +1075,39 @@ img {
 }
 
 .card__overley {
-  font-size: 18px;
-  line-height: 1.55;
-  letter-spacing: 0.03em;
   color: var(--secondary-color);
   background-color: rgba(33, 150, 243, 0.9);
-  padding: 63px 24px;
   position: absolute;
   top: 0;
   right: 0;
   height: 100%;
   transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 4.65vw;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  padding: 24px;
 }
 .card__link:hover .card__overley, .card__link:focus .card__overley {
   transform: translateY(0);
+}
+@media screen and (min-width: 480px) {
+  .card__overley {
+    padding: 77px 24px;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card__overley {
+    padding: 49px 24px 77px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card__overley {
+    padding: 63px 24px;
+  }
 }
 
 .card__container {

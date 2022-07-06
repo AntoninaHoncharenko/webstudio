@@ -77,7 +77,6 @@
 }
 
 .card__link {
-  // display: block;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -96,10 +95,8 @@
 }
 
 .card__overley {
-  @include font(null, 18px, 1.55, 0.03em);
   color: var(--secondary-color);
   background-color: rgba(33, 150, 243, 0.9);
-  padding: 63px 24px;
   position: absolute;
   top: 0;
   right: 0;
@@ -110,6 +107,24 @@
   .card__link:hover &,
   .card__link:focus & {
     transform: translateY(0);
+  }
+
+  font-size: 4.65vw;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  padding: 24px;
+
+  @include mobile {
+    padding: 77px 24px;
+    @include font(null, 18px, 1.55, 0.03em);
+  }
+
+  @include tablet {
+    padding: 49px 24px 77px;
+  }
+
+  @include desktop {
+    padding: 63px 24px;
   }
 }
 
