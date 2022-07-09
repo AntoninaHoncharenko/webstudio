@@ -29,7 +29,7 @@
 
   @include tablet {
     display: block;
-    margin-left: 84px;
+    margin-left: auto;
   }
 
   @include desktop {
@@ -100,11 +100,21 @@
   }
 }
 
-.header__contact-item + .header__contact-item {
-  margin-top: 10px;
-  @include desktop {
-    margin-top: 0;
-    margin-left: 50px;
+.header__contact-item {
+  &:first-child {
+    @media screen and (max-width: 1199px) {
+      padding-top: 21px;
+    }
+  }
+
+  &:last-child {
+    @media screen and (max-width: 1199px) {
+      margin-top: 10px;
+      padding-bottom: 21px;
+    }
+    @include desktop {
+      margin-left: 50px;
+    }
   }
 }
 
