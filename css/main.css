@@ -840,6 +840,19 @@ img {
   color: var(--accent-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .tabtel-mail {
+    padding-top: 21px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .tabtel-tel {
+    margin-top: 10px;
+    padding-bottom: 21px;
+  }
+}
+
 .header__contact-icon {
   margin-right: 8px;
   fill: currentColor;
@@ -872,17 +885,6 @@ img {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .header__contact-item:first-child {
-    padding-top: 21px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .header__contact-item:last-child {
-    margin-top: 10px;
-    padding-bottom: 21px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .header__contact-item:last-child {
     margin-left: 50px;
