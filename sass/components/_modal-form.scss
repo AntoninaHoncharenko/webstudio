@@ -2,7 +2,7 @@
   @include font(700, 20px, 1.5, 0.03em);
 
   @include tablet {
-    @include font(700, 19px, 1.15, 0.03em);
+    @include font(700, 19px, 1.5, 0.03em);
   }
 
   text-align: center;

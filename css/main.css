@@ -336,24 +336,26 @@ img {
   position: fixed;
   top: 0;
   transition: opacity 300ms, visibility 300ms;
+  padding: 15px 8px;
+  overflow-y: scroll;
 }
 
 .modal {
-  width: 98%;
-  height: 609px;
   padding: 25px;
+  position: relative;
   background-color: var(--secondary-color);
   border-radius: 4px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  transition: 300ms;
 }
 @media screen and (min-width: 480px) {
   .modal {
     width: 450px;
+    height: 609px;
     padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: 300ms;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -415,7 +417,7 @@ img {
   .modal__title {
     font-weight: 700;
     font-size: 19px;
-    line-height: 1.15;
+    line-height: 1.5;
     letter-spacing: 0.03em;
   }
 }
@@ -616,6 +618,10 @@ img {
 .modal-form__btn:hover, .modal-form__btn:focus {
   cursor: pointer;
   background-color: #188ce8;
+}
+
+.menu {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-btn {

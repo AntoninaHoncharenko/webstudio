@@ -5,16 +5,25 @@
   position: fixed;
   top: 0;
   transition: opacity 300ms, visibility 300ms;
+
+  padding: 15px 8px;
+  overflow-y: scroll;
 }
 
 .modal {
-  width: 98%;
-  height: 609px;
+  // height: 100%;
   padding: 25px;
+  position: relative;
 
   @include mobile {
     width: 450px;
+    height: 609px;
     padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: 300ms;
   }
 
   @include desktop {
@@ -24,11 +33,6 @@
 
   background-color: var(--secondary-color);
   border-radius: 4px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  transition: 300ms;
 }
 
 .backdrop.is-hidden .modal {
